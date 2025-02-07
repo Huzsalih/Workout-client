@@ -11,7 +11,7 @@ const DeleteWorkout = () => {
     const handleDeleteWorkout = () => {
         
         axios
-          .delete(`http://localhost:5555/workouts/${id}`)
+          .delete(`http://https://workout-server-qadc.onrender.com/workouts/${id}`)
           .then(() => {
             navigate("/home");
           })

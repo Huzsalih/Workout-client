@@ -25,7 +25,7 @@ const CreateWorkout = () => {
     };
 
     axios
-      .post("http://localhost:5555/workouts", data, {
+      .post("http://https://workout-server-qadc.onrender.com/workouts", data, {
         headers: {
           "Content-Type": "application/json",
         

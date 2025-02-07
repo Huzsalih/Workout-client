@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import {useState} from "react";
 import axios from "axios";
-import { useNavigate, Link, useNavigation } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useSnackbar } from "notistack";
 
 
@@ -16,7 +16,7 @@ const SignUp = () => {
     const handleSignUp = () => {
         
         axios
-        .post('http://localhost:5555/user/signup', { email, password })
+        .post('http://https://workout-server-qadc.onrender.com/user/signup', { email, password })
         .then((response) => {
             enqueueSnackbar(response.data.message, { variant: 'success'});
             navigate('/');
