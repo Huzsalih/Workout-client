@@ -14,7 +14,7 @@ const { enqueueSnackbar } = useSnackbar();
 
 const handleLogin = () => {
     axios
-    .post('http://https://workout-server-qadc.onrender.com/user/login', { email, password })
+    .post('https://workout-server-qadc.onrender.com/user/login', { email, password })
     .then(response => {
         const { email }= response.data;
         console.log('Eamil:', email);

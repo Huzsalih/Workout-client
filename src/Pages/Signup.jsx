@@ -16,7 +16,7 @@ const SignUp = () => {
     const handleSignUp = () => {
         
         axios
-        .post('http://https://workout-server-qadc.onrender.com/user/signup', { email, password })
+        .post('https://workout-server-qadc.onrender.com/user/signup', { email, password })
         .then((response) => {
             enqueueSnackbar(response.data.message, { variant: 'success'});
             navigate('/');
