@@ -8,10 +8,11 @@ const DeleteWorkout = () => {
 
     const navigate = useNavigate();
     const { id } = useParams();
+
     const handleDeleteWorkout = () => {
         
         axios
-          .delete(`http://https://workout-server-qadc.onrender.com/workouts/${id}`)
+          .delete(`https://workout-server-qadc.onrender.com/workouts/${id}`)
           .then(() => {
             navigate("/home");
           })

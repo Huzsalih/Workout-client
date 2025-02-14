@@ -35,7 +35,7 @@ useEffect(() => {
       }
 
       try {
-        const response = await axios.get("http://https://workout-server-qadc.onrender.com/workouts", {
+        const response = await axios.get("https://workout-server-qadc.onrender.com/workouts", {
           headers: {
             Authorization: `Bearer ${token}`, 
           },

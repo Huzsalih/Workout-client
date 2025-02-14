@@ -21,7 +21,7 @@ const WorkoutsTable = ({workouts}) => {
                         {index + 1}
                     </td>
                     <td className='border'>
-                        {workout.wokrout}
+                        {workout.workout}
                     </td>
                     <td className='border'>
                         {workout.load}
@@ -31,7 +31,7 @@ const WorkoutsTable = ({workouts}) => {
                     </td>
                     <td className='border'>
                         <div className='flex justify-center gap-x-4'>
-                            <Link to={`/wokrouts/delete/${workout._id}`}>
+                            <Link to={`/workouts/delete/${workout._id}`}>
                             <MdOutlineDelete className='mx-3' />
                             </Link>
                         </div>
